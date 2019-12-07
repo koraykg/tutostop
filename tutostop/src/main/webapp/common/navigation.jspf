@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<nav class="navbar navbar-light bg-light">
 		<a class="navbar-brand" href="#"> <img
-			src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTtRCIqYfIwZqxc4cjZhq19j8ERNEKSBH7BKNq0TycJfGn2jVl5" width="55" height="55"
+			src="https://www.kontrolkalemi.com/forum/data/avatars/l/329/329174.jpg?1434712474" width="55" height="55"
 			alt=""></a>
 	</nav>
 	
@@ -11,7 +11,7 @@
 					<span class="sr-only">(current)</span>
 			</a></li>
 			
-			<li class="nav-item active"><a class="nav-link" href="#">Profile
+			<li class="nav-item active"><a class="nav-link" href="/Profile.jsp">Profile
 					<span class="sr-only">(current)</span>
 			</a></li>
 			
@@ -34,17 +34,7 @@
 		
 	</div>
 	<!-- Collapsible content -->
-	
-	<div style="padding-right: 30px;display: inline-block;">
-	<div style="float:left;">
-	<!-- Search form -->
-		<form class="form-inline ml-auto">
-			<div class="md-form my-0">
-				<input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-			</div>
-		</form>
-	</div>
-	<div style="float:right;">	
+	<div style="float:right; padding-right:30px; font-size:16px;">	
 	<ul class="nav navbar-nav navbar-right" >
 		<li ><a href="/Logout">Logout</a></li>
 	</ul>

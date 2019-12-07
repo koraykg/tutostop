@@ -4,10 +4,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Giris Sayfasi</title>
-<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	rel="stylesheet">
-
+<title >Giris Sayfasi</title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 <style>
 .footer {
 	position: absolute;
