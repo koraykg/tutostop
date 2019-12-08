@@ -55,7 +55,6 @@ public class ReservationEmailDao
 		email.setSubject("ASSIGNMENT TO NEW ROAD TRIP!");
 		email.setMsg("You are successfully added to the destination (from " + startLoc + " to " + finLoc + " at " + tripTime +"). Hope you have a good trip!");
 		email.addTo(eMail);
-		email.addCc("semakamisli@gmail.com");
 		email.send();
 	}
 }

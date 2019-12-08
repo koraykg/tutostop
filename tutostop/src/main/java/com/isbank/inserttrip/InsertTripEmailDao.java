@@ -22,7 +22,6 @@ public class InsertTripEmailDao
 		email.setSubject("NEW ROAD TRIP ADDED!");
 		email.setMsg("Your new road trip destination (from " + startLoc + " to " + finLoc + " at " + tripTime +") has been successfully added to our list. Hope you have a good trip!");
 		email.addTo(eMail);
-		email.addCc("semakamisli@gmail.com");
 		email.send();
 	}
 }

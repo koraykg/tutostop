@@ -22,6 +22,7 @@ public class ProfileTripsAsPassengerDao {
 		ResultSet rs = null;
 		
 		try {
+			System.out.println("ProfileTripsAsPassengerDao sınıfın giriş gerçekleşti.");
 			Class.forName("com.mysql.jdbc.Driver");
 			Connection con = DriverManager.getConnection(url, username, password);
 			PreparedStatement st = con.prepareStatement(sql);
@@ -33,11 +34,13 @@ public class ProfileTripsAsPassengerDao {
 				String finLocBean = rs.getString("finishLocation");
 				String tripTimeBean = rs.getString("tripDateTime");
 				String priceBean = rs.getString("price");
-				ProfileTripBean showYourTripBean=new ProfileTripBean();
+				int tripUid = rs.getInt("tripuid");
+				ProfileTripBean showYourTripBean = new ProfileTripBean();
 				showYourTripBean.setStartLocBean(startLocBean);
 				showYourTripBean.setFinLocBean(finLocBean);
 				showYourTripBean.setTripTimeBean(tripTimeBean);
 				showYourTripBean.setPriceBean(priceBean);
+				showYourTripBean.setTripuid(tripUid);
 				tripList.add(showYourTripBean);
 			} 
 			st.close();

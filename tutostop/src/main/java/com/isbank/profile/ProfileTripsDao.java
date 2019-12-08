@@ -33,11 +33,13 @@ public class ProfileTripsDao {
 				String finLocBean = rs.getString("finishLocation");
 				String tripTimeBean = rs.getString("tripDateTime");
 				String priceBean = rs.getString("price");
+				int tripUid = rs.getInt("tripuid");
 				ProfileTripBean showYourTripBean=new ProfileTripBean();
 				showYourTripBean.setStartLocBean(startLocBean);
 				showYourTripBean.setFinLocBean(finLocBean);
 				showYourTripBean.setTripTimeBean(tripTimeBean);
 				showYourTripBean.setPriceBean(priceBean);
+				showYourTripBean.setTripuid(tripUid);
 				tripList.add(showYourTripBean);
 			} 
 			st.close();

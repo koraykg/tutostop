@@ -6,6 +6,8 @@ public class ProfileTripBean {
 	private String finLocBean;
 	private String tripTimeBean;
 	private String priceBean;
+	private int tripuid;
+	
 	public String getDriverName() {
 		return driverName;
 	}
@@ -36,9 +38,16 @@ public class ProfileTripBean {
 	public void setPriceBean(String priceBean) {
 		this.priceBean = priceBean;
 	}
+	public int getTripuid() {
+		return tripuid;
+	}
+	public void setTripuid(int tripuid) {
+		this.tripuid = tripuid;
+	}
 	@Override
 	public String toString() {
 		return "ProfileTripBean [driverName=" + driverName + ", startLocBean=" + startLocBean + ", finLocBean="
-				+ finLocBean + ", tripTimeBean=" + tripTimeBean + ", priceBean=" + priceBean + "]";
-	}	
+				+ finLocBean + ", tripTimeBean=" + tripTimeBean + ", priceBean=" + priceBean + ", tripuid=" + tripuid
+				+ "]";
+	}
 }
