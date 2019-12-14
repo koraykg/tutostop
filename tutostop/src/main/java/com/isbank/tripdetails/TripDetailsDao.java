@@ -1,4 +1,4 @@
-package tripdetails;
+package com.isbank.tripdetails;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

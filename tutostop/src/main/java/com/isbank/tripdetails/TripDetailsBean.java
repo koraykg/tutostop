@@ -1,4 +1,4 @@
-package tripdetails;
+package com.isbank.tripdetails;
 
 public class TripDetailsBean {
 	private int tripuid;

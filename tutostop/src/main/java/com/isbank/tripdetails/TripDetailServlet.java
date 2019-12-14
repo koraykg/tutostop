@@ -1,4 +1,4 @@
-package tripdetails;
+package com.isbank.tripdetails;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
@@ -10,15 +10,18 @@ import javax.servlet.http.HttpServletResponse;
 import com.isbank.profile.ProfileService;
 
 
-@WebServlet("/TripDetails")
+@WebServlet("/TripDetailServlet")
 public class TripDetailServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ProfileService tripService = new ProfileService();
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("TripDetailServlet'e istek gönderildi doPost");
+		response.setContentType("text/plain");
 		int tripuid = Integer.parseInt(request.getParameter("tripuid"));
+		System.out.println("TripDetailServlet tripuid = " + tripuid);
 		
+		request.setAttribute("tripuid", Integer.parseInt(request.getParameter("tripuid")));
 		request.setAttribute("propertyList", tripService.retrieveTripInfoDetails(tripuid));
 		request.setAttribute("passengerList", tripService.retrievePassengers(tripuid));
 		request.getRequestDispatcher("/TripDetails.jsp").forward(request, response);

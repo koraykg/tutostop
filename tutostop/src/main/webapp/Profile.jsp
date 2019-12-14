@@ -35,7 +35,7 @@
 						<h3 align="center"
 							style="font: 20px arial, sans-serif; margin-top: 5px">@Driver's Seat</h3>
 					</div>
-					<form action="/Profile" method="GET">
+					<form action="/TripDetails" method="GET">
 					<table class="table">
 						<thead>
 							<th scope="col">Start</th>
@@ -50,7 +50,7 @@
 									<td>${propertyAllList.finLocBean}</td>
 									<td>${propertyAllList.tripTimeBean}</td>
 									<td>${propertyAllList.priceBean}</td>
-									<td><a href="/TripDetails?tripuid=${propertyAllList.tripuid}">Trip Details</a></td>
+									<td><a href="/TripDetailServlet?tripuid=${propertyAllList.tripuid}">Trip Details</a></td>
 								</tr>
 							</c:forEach>
 						</tbody>
@@ -79,7 +79,7 @@
 									<td>${passengerAllList.finLocBean}</td>
 									<td>${passengerAllList.tripTimeBean}</td>
 									<td>${passengerAllList.priceBean}</td>
-									<td><a href="/TripDetails?tripuid=${passengerAllList.tripuid}">Trip Details</a></td>
+									<td><a href="/TripDetailServlet?tripuid=${passengerAllList.tripuid}">Trip Details</a></td>
 								</tr>
 							</c:forEach>
 						</tbody>
@@ -91,3 +91,7 @@
 </body>
 </html>
 
+<!-- 
+			Server Version: <%= application.getServerInfo() %><br>
+			Servlet Version: <%= application.getMajorVersion() %>.<%= application.getMinorVersion() %>
+			JSP Version: <%= JspFactory.getDefaultFactory().getEngineInfo().getSpecificationVersion() %> <br>  -->

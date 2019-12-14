@@ -3,10 +3,10 @@ package com.isbank.profile;
 import java.util.ArrayList;
 import java.util.List;
 
-import tripdetails.PassengerBean;
-import tripdetails.PassengerDao;
-import tripdetails.TripDetailsBean;
-import tripdetails.TripDetailsDao;
+import com.isbank.tripdetails.PassengerBean;
+import com.isbank.tripdetails.PassengerDao;
+import com.isbank.tripdetails.TripDetailsBean;
+import com.isbank.tripdetails.TripDetailsDao;
 
 public class ProfileService {
 	private List<ProfileTripBean> trips = new ArrayList<ProfileTripBean>();

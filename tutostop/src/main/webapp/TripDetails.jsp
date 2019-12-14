@@ -74,22 +74,22 @@
 						<h3 align="center"
 							style="font: 20px arial, sans-serif; margin-top: 5px">Photos</h3>
 					</div>
-					<form action="/Profile" method="GET">
-					<table class="table">
-						<thead>
-							<th scope="col">Start</th>
-							<th scope="col">Finish</th>
-							<th scope="col">Trip Date</th>
-							<th scope="col">Price</th>
-						</thead>
-						<tbody>
-							<c:forEach items="${photoList}" var="photoAllList">
-								<tr>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-					</form>
+					<!-- ${tripuid} -->
+			        <form method="post" action="uploadServlet" enctype="multipart/form-data">
+			            <table style="border-radius: 25% 25% 25% 25%; border: 2px solid #000000; margin-top: 10px; margin-left: 5px; ">
+			                <tr>
+			                    <td style="padding-top:10px;">Portrait Photo: </td>
+			                    <td><input type="file" name="photo" size="50"/></td>
+			                    <td><input type="hidden" name="tripuid" value="${tripuid}" /></td>
+			                </tr>
+			                <tr>
+			                    <td colspan="2">
+			                    	<br>
+			                        <input type="submit" value="Save">
+			                    </td>
+			                </tr>
+			            </table>
+			        </form>
 				</div>
 			</div>
 		</div>
