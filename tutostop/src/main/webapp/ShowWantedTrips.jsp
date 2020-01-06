@@ -63,8 +63,8 @@
 		</table>
 	</div>
 	<div class="container">
-		<a class="btn btn-success" href="/TripAnnouncement.jsp">Add New
-			Trip</a> <a class="btn btn-success" href="/LookForTrip.jsp">Find Trip</a>
+		<a class="btn btn-success" href="/TripAnnouncement.jsp">Add New Trip</a> 
+		<a class="btn btn-success" href="/LookForTrip.jsp">Find Trip</a>
 	</div>
 	<%@ include file="../common/footer.jspf"%>
 </body>

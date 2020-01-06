@@ -35,7 +35,9 @@ public class ShowTripsDao {
 				String tripTimeBean = rs.getString("tripDateTime");
 				String priceBean = rs.getString("price");
 				int tripuid = rs.getInt("tripuid");
+				
 				ShowTripBean showTripBean=new ShowTripBean();
+				
 				showTripBean.setStartLocBean(startLocBean);
 				showTripBean.setFinLocBean(finLocBean);
 				showTripBean.setTripTimeBean(tripTimeBean);

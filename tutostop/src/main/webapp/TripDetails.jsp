@@ -75,21 +75,23 @@
 							style="font: 20px arial, sans-serif; margin-top: 5px">Photos</h3>
 					</div>
 					<!-- ${tripuid} -->
+					<div class="col-lg-8">
 			        <form method="post" action="uploadServlet" enctype="multipart/form-data">
-			            <table style="border-radius: 25% 25% 25% 25%; border: 2px solid #000000; margin-top: 10px; margin-left: 5px; ">
+			            <table style="border-radius: 25% 25% 25% 25%; border: 2px solid #000000; margin-top: 20px; margin-left: 5px; ">
 			                <tr>
 			                    <td style="padding-top:10px;">Portrait Photo: </td>
 			                    <td><input type="file" name="photo" size="50"/></td>
 			                    <td><input type="hidden" name="tripuid" value="${tripuid}" /></td>
 			                </tr>
 			                <tr>
-			                    <td colspan="2">
-			                    	<br>
-			                        <input type="submit" value="Save">
-			                    </td>
+			                    <td><br><input style="margin-left:5px; width: 85px;" type="submit" class="btn btn-success btn-sm" value="Save"></td>
+			                    <td><br><button style="margin-left:10px;" type="button" class="btn btn-primary btn-sm" value="Show Photos">
+								<a style="text-decoration: none;" href="/ShowPhotosServlet?tripuid=${tripuid}"><font color="white">Show Photos</font></a>
+							</button></td>
 			                </tr>
 			            </table>
 			        </form>
+					</div>
 				</div>
 			</div>
 		</div>

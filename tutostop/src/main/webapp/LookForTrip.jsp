@@ -72,14 +72,10 @@
 							</span>
 						</div>
 						<div style="margin-bottom: 10px;">
-							<button type="submit" class="btn btn-primary btn-sm"
-								value="Yolculuk Ara">Find Trip</button>
-							<button type="reset" class="btn btn-danger btn-sm"
-								value="Formu Temizle">Clean Form</button>
-							<button type="button" class="btn btn-success btn-sm"
-								value="Yolculuk Ekle">
-								<a style="text-decoration: none;" href="TripAnnouncement.jsp"><font
-									color="white">Add Trip</font></a>
+							<button type="submit" class="btn btn-primary btn-sm" value="Yolculuk Ara">Find Trip</button>
+							<button type="reset" class="btn btn-danger btn-sm" value="Formu Temizle">Clean Form</button>
+							<button type="button" class="btn btn-success btn-sm" value="Yolculuk Ekle">
+								<a style="text-decoration: none;" href="TripAnnouncement.jsp"><font color="white">Add Trip</font></a>
 							</button>
 							<button type="button" class="btn btn-secondary btn-sm"
 								value="Ana Sayfa">
