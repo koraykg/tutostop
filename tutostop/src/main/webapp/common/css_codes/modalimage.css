@@ -64,15 +64,16 @@
   position: absolute;
   top: 15px;
   right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
+  color: #ffffff;
+  font-size: 12px;
   font-weight: bold;
-  transition: 0.3s;
+  background-color: #E22121;
+  transition: 0.8s;
 }
 
 .close:hover,
 .close:focus {
-  color: #bbb;
+  color: #E22121;
   text-decoration: none;
   cursor: pointer;
 }
